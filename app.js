@@ -103852,72 +103852,72 @@ gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPAC
 
 
 
-        
+var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 
-        $(document).on("click", "#menu", function (){
-            gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to(leftwallbody2.position, {
-                x: -6,
-                ease: "power4.inOut",
-                yoyo: true,
-                repeat: 1,
-                duration: 0.6
-            });
+$(document).on("click", "#menu", function () {
+    gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to(leftwallbody2.position, {
+        x: -6,
+        ease: "power4.inOut",
+        yoyo: true,
+        repeat: 1,
+        duration: 0.6
+    });
+});
+
+$(document).on("click", "#gravity0", function () {
+
+    world.gravity.set(0, 20, 0.1);
+    setTimeout(function () {
+        world.gravity.set(0, 0, 0.1)
+
+        /*gsap.to(bottomwallbody.position, {
+            y: -5,
+            ease: "power4.inOut",
+            yoyo: true,
+            repeat: 1,
+            duration: 0.6
         });
-
-        $(document).on("click", "#gravity0", function (){
-
-            world.gravity.set(0, 20, 0.1);
-            setTimeout(function(){
-                world.gravity.set(0, 0, 0.1)
-
-            /*gsap.to(bottomwallbody.position, {
-                y: -5,
-                ease: "power4.inOut",
-                yoyo: true,
-                repeat: 1,
-                duration: 0.6
-            });
-            */
-        }, 200);
-        });
-
-
-
-
-        /*
-        burger.addEventListener("click", noscroll);
-        function noscroll() {
-          $(".triggerintro").click();
-        }
-
-
-        var elem = $('#trigger3');
-
-        function removeDecals() {
-
-        				decals.forEach( function ( d ) {
-
-        					scene.remove( d );
-
-        				} );
-
-        				decals.length = 0;
-
-        			}
-
-        $(window).scroll(function(){
-            var docViewTop = $(window).scrollTop();
-            var docViewBottom = docViewTop + $(window).height();
-
-            var elemTop = $(elem).offset().top;
-            var elemBottom = elemTop + $(elem).height();
-
-            if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
-                removeDecals();
-            }
-        });      
         */
+    }, 200);
+});
+
+
+
+
+/*
+burger.addEventListener("click", noscroll);
+function noscroll() {
+  $(".triggerintro").click();
+}
+
+
+var elem = $('#trigger3');
+
+function removeDecals() {
+
+                decals.forEach( function ( d ) {
+
+                    scene.remove( d );
+
+                } );
+
+                decals.length = 0;
+
+            }
+
+$(window).scroll(function(){
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    if ((elemBottom <= docViewBottom) && (elemTop >= docViewTop)) {
+        removeDecals();
+    }
+});      
+*/
 // Carrer page model
 function initWebglC() {
     const gltfLoader = new three_examples_jsm_loaders_GLTFLoader__WEBPACK_IMPORTED_MODULE_7__.GLTFLoader()
@@ -106532,6 +106532,9 @@ _barba_core__WEBPACK_IMPORTED_MODULE_14___default().init({
         }
     ]
 });
+
+
+
 })();
 
 /******/ })()

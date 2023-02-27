@@ -103854,6 +103854,7 @@ gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPAC
 
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+console.log("we are working");
 
 $(document).on("click", "#menu", function () {
     gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to(leftwallbody2.position, {
